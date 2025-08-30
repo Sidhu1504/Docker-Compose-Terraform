@@ -9,8 +9,7 @@ redis = Redis(host='redis', port=6379)
 def hello():
     # redis.incr returns an integer
     count = redis.incr('hits')
-    return f"This webpage has been viewed {count} time(s)\n"
-    return f"Hello from Sidhant Bote"
+    return f"This webpage has been viewed {count} time, Hello From Sidhant(s)\n"
 
 if __name__ == "__main__":
     # debug True for dev only
