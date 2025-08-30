@@ -10,6 +10,7 @@ def hello():
     # redis.incr returns an integer
     count = redis.incr('hits')
     return f"This webpage has been viewed {count} time(s)\n"
+    return f"Hello from Sidhant Bote"
 
 if __name__ == "__main__":
     # debug True for dev only
